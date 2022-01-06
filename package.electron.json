@@ -1,0 +1,17 @@
+{
+  "name": "webgpu-metaballs",
+  "version": "0.0.1",
+  "repository": "https://github.com/toji/webgpu-metaballs",
+  "main": "src/main.js",
+  "authors": [
+    "Brandon Jones <tojiro@gmail.com>"
+  ],
+  "description": "Blobby fun with WebGPU!",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "16.0.6"
+  }
+}

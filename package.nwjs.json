@@ -1,0 +1,19 @@
+{
+  "name": "webgpu-metaballs",
+  "version": "0.0.1",
+  "license": "MIT",
+  "chromium-arg-notes":"multiple values are space separated",
+  "chromium-args": "--enable-unsafe-webgpu",
+  "description": "Demo of PouchDB with Node-Webkit",
+  "main": "./src/index.html",
+  "scripts": {
+    "start": "nw"
+  },
+  "dependencies": {
+    "nw": "0.60.0"
+  },
+  "unused": {
+    "//postinstall": "cd node_modules/leveldown && nw-gyp configure --target=0.12.3 && nw-gyp build",
+    "nw-gyp": "3.6.5"
+  }
+}

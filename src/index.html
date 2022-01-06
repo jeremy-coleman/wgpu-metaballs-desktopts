@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title>WebGPU Metaballs</title>
+
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background-color: #000000;
+      }
+
+      canvas {
+        position: absolute;
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        touch-action: none;
+      }
+
+      .dg.main {
+        position: absolute;
+        z-index: 100;
+        top: 1em;
+        right: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="importmap">
+      {
+        "imports": {
+          "gl-matrix": "./imports/gl-matrix/dist/esm/index.js",
+          "webgpu-texture-loader": "./imports/web-texture-tool/webgpu-texture-loader.js",
+          "dat.gui": "./imports/dat.gui/dat.gui.module.js",
+          "stats.js": "./imports/stats.js/src/Stats.js"
+        }
+      }
+    </script>
+    <script type="module">
+      import { init } from "./app.js"
+      init()
+    </script>
+  </body>
+</html>
